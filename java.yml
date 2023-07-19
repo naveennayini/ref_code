@@ -16,4 +16,4 @@
         command: java -version
         register: java_version_outputs
       - debug: 
-           var: java_version_outputs.stderr.split(" ")[:3] | cut -d" "
+           var: java_version_outputs.stderr.split(" ")[:3]| [:-1] 
