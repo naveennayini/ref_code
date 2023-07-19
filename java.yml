@@ -16,5 +16,5 @@
         command: java -version
         register: java_version_output
       - debug: 
-           var: java_version_output.stderr_lines['openjdk version']
+           var: java_version_output.stderr_lines
         
