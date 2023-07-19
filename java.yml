@@ -10,5 +10,5 @@
           state: latest
       - name: installing required java
         yum: 
-          name: jave-17.0.5-openjdk
+          name: jave-17.0.7+7
           state: present
