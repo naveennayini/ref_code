@@ -10,5 +10,5 @@
           state: latest
       - name: installing required java
         yum: 
-          name: java-17.0.7+7
+          name: java-*
           state: present
