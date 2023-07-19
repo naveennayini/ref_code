@@ -16,4 +16,4 @@
         command: java -version
         register: java_version_output
       - debug: 
-           var: java_version_output.stderr | split()'\"@\"')
+           var: java_version_output.stderr | split('\"@\"')
