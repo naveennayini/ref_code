@@ -15,5 +15,6 @@
       - name: finding the jdk version
         command: java -version
         register: java_version_output
-      - debug: var: java_version_output
+      - debug: 
+           var: java_version_output
         
