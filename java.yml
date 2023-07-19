@@ -16,4 +16,4 @@
         command: java -version
         register: java_version_output
       - debug: 
-           var: java_version_output.stderr_lines | split('\\n')
+           var: java_version_output.stderr_lines | map('split', ',')|
