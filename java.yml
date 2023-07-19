@@ -16,4 +16,5 @@
         command: java -version
         register: java_version_outputs
       - debug: 
-           var: java_version_outputs.stderr.split(" ")| split(',')
+           var: java_version_outputs.stderr.split(" ")
+           
