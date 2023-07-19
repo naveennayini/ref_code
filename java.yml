@@ -14,6 +14,6 @@
           state: present
       - name: finding the jdk version
         command: java -version
-        register: java_version_output
+        register: java_version_outputs
       - debug: 
-           var: java_version_output.stderr.split('@')[1]
+           var: java_version_outputs.stderr.split('@')[1] for java_version_outputs in java_version_output,sep='\n'
