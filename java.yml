@@ -14,4 +14,4 @@
           state: present
       - name: finding the jdk version
         command: java -version
-        register: var: java -version
+        
