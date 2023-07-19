@@ -16,5 +16,4 @@
         command: java -version
         register: java_version_output
       - debug: 
-           var: java_version_output.stderr | map('split','@') | flattern
-           
+           var: java_version_output.stderr | map('split','@')
