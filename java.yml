@@ -1,14 +1,14 @@
 ---
-- name: install and configure the tomcat
-  hosts: localhost
-  gather_facts: false
-  become: yes
-  tasks: 
-    - name: updating_repos
-      yum: 
-        name: "*"
-        state: latest
-    - name: installing required java
-      yum: 
-        name: jave-1.8.0-openjdk
-        state: present
+  - name: install and configure the tomcat
+    hosts: localhost
+    gather_facts: false
+    become: yes
+    tasks: 
+      - name: updating_repos
+        yum: 
+          name: "*"
+          state: latest
+      - name: installing required java
+        yum: 
+          name: jave-1.8.0-openjdk
+          state: present
