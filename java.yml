@@ -23,6 +23,7 @@
       - debug: 
            var: java_version_outputs.stderr.split(" ")[:3]
       - name: Downloading required tomcat
+        become: yes
         get_url:
           url: "{{tomcat_url}}"
           dest: /usr/local
