@@ -5,8 +5,8 @@
     vars:
       req_java: java-*
       set_java: java-*
-      req_tomcat_var: 8.5.31
-      tomcat_url: http://mirror.vorboss.net/apache/tomcat/tomcat-{{req_tomcat_var.split('.')[0]}}/v{{req_tomcat_var}}/bin/apache-tomcat-{{req_tomcat_var}}.tar.gz
+      TOMCAT_VER: 8.5.31
+      tomcat_url: http://mirror.vorboss.net/apache/tomcat/tomcat-8/v${TOMCAT_VER}/bin/apache-tomcat-${TOMCAT_VER}.tar.gz
     become: yes
     tasks: 
       - name: updating_repos
@@ -23,7 +23,6 @@
       - debug: 
            var: java_version_outputs.stderr.split(" ")[:3]
       - name: Downloading required tomcat
-        become: yes
         get_url:
           url: "{{tomcat_url}}"
           dest: /usr/local
