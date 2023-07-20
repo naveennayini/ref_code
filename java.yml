@@ -13,7 +13,7 @@
           state: latest
       - name: installing required java
         yum: 
-          name: var = set_java
+          name: {{ set_java }}
           state: present
       - name: finding the jdk version
         command: java -version
