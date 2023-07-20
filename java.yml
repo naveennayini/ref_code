@@ -5,7 +5,8 @@
     vars:
       req_java: java-*
       set_java: java-*
-      tomcat_url: https://downloads.apache.org/tomcat/tomcat-10/v10.1.11/bin/apache-tomcat-10.1.11.tar.gz
+      TOMCAT_VAR: 10.1.11
+      tomcat_url: https://downloads.apache.org/tomcat/tomcat-{{TOMCAT_VAR.split('.')[0]}}/v{{TOMCAT_VAR}}/bin/apache-tomcat-{{TOMCAT_VAR}}.tar.gz
     become: yes
     tasks: 
       - name: updating_repos
