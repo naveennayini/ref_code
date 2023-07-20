@@ -2,6 +2,9 @@
   - name: install and configure the tomcat
     hosts: localhost
     gather_facts: false
+    vars:
+      req_java: java-*
+      set_java: java-*
     become: yes
     tasks: 
       - name: updating_repos
@@ -10,7 +13,7 @@
           state: latest
       - name: installing required java
         yum: 
-          name: java-*
+          name: set_java
           state: present
       - name: finding the jdk version
         command: java -version
