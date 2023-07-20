@@ -5,8 +5,7 @@
     vars:
       req_java: java-*
       set_java: java-*
-      TOMCAT_VER: 8.5.31
-      tomcat_url: http://mirror.vorboss.net/apache/tomcat/tomcat-8/v${TOMCAT_VER}/bin/apache-tomcat-${TOMCAT_VER}.tar.gz
+      tomcat_url: https://mirrors.estointernet.in/apache/tomcat/tomcat-9/v9.0.43/bin/apache-tomcat-9.0.43.tar.gz
     become: yes
     tasks: 
       - name: updating_repos
