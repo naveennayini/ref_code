@@ -5,7 +5,7 @@
     vars:
       req_java: java-*
       set_java: java-*
-      tomcat_url: https://mirrors.estointernet.in/apache/tomcat/tomcat-9/v9.0.43/bin/apache-tomcat-9.0.43.tar.gz
+      tomcat_url: https://downloads.apache.org/tomcat/tomcat-10/v10.1.11/bin/apache-tomcat-10.1.11.tar.gz
     become: yes
     tasks: 
       - name: updating_repos
