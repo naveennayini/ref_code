@@ -5,7 +5,7 @@
     vars:
       req_java: java-*
       set_java: java-*
-      req_tomcat_var: 9.0.26
+      req_tomcat_var: 8.5.31
       tomcat_url: http://mirror.vorboss.net/apache/tomcat/tomcat-{{req_tomcat_var.split('.')[0]}}/v{{req_tomcat_var}}/bin/apache-tomcat-{{req_tomcat_var}}.tar.gz
     become: yes
     tasks: 
