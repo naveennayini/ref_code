@@ -41,7 +41,6 @@
         register: version_output
       - debug:
            var: version_output.stdout_lines[0].split(':')[1].split('/')[1]
-      - debug:
            msg: 
             - "{{version_output.stdout_lines[0].split(':')[1].split('/')[1]}}"
             - "{{inventory_hostname}}"
