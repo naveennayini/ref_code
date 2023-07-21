@@ -6,7 +6,7 @@
       req_java: java-*
       set_java: java-*
       TOMCAT_VAR: 10.1.11
-      tomcat_port: 8090
+      tomcat_port: 80
       tomcat_url: https://downloads.apache.org/tomcat/tomcat-{{TOMCAT_VAR.split('.')[0]}}/v{{TOMCAT_VAR}}/bin/apache-tomcat-{{TOMCAT_VAR}}.tar.gz
     become: yes
     tasks: 
@@ -37,7 +37,7 @@
         ignore_errors: true
       - name: copying a required file to change the port
         template:
-          src: /usr/local/latest/conf/server.xml.j2
+          src: /usr/local/7latest/conf/server.xml.j2
           dest: /usr/local/latest/conf/server.xml    
       - name: starting tomcat server
         shell: nohup /usr/local/latest/bin/startup.sh &
