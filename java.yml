@@ -39,6 +39,8 @@
       - name: status of the tomcat server
         shell: /usr/local/latest/bin/version.sh
         register: version_output
+        var:
+          output
       - debug:
            var: output =  version_output.stdout_lines[0].split(':')[1].split('/')[1]
            var: var.output | int
