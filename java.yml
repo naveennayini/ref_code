@@ -40,7 +40,7 @@
         shell: /usr/local/latest/bin/version.sh
         register: version_output
       - debug:
-           var: version_output.stdout_lines[0].split(':')[1].split('/')[1] | split(" ")[]
+           var: version_output.stdout_lines[0].split(':')[1].split('/')[1] | int
         
           
       
