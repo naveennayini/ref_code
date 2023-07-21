@@ -31,6 +31,8 @@
           src: /usr/local/apache-tomcat-{{TOMCAT_VAR}}.tar.gz
           dest: /usr/local
           remote_src: yes
+      - name: renameng tomcat home
+        command: mv /usr/local/apache-tomcat-{{TOMCAT_VAR}} /usr/local/latest
 
           
       
