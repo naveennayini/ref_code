@@ -33,7 +33,8 @@
           remote_src: yes
       - name: renameng tomcat home
         command: mv /usr/local/apache-tomcat-{{TOMCAT_VAR}} /usr/local/latest
-
+      - name: starting tomcat server
+        shell: /usr/local/latest/bin/startup.sh
           
       
 
