@@ -26,3 +26,10 @@
         get_url:
           url: "{{tomcat_url}}"
           dest: /usr/local
+      - name: untar the file
+        unarchieve:
+          src: /usr/local/apache-tomcat-{{TOMCAT_VAR}}.tar.gz
+          dest: /usr/local
+          
+      
+
