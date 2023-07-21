@@ -35,6 +35,12 @@
         command: mv /usr/local/apache-tomcat-{{TOMCAT_VAR}} /usr/local/latest
       - name: starting tomcat server
         shell: /usr/local/latest/bin/startup.sh
+      - name: status of the tomcat server
+        shell: /usr/local/latest/bin/version.sh
+        register: version_output
+      - debug:
+           var: version_output.stdout
+        
           
       
 
