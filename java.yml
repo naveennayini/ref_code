@@ -50,9 +50,5 @@
            msg: 
             - "{{version_output.stdout_lines[0].split(':')[1].split('/')[1]}}"
             - "{{inventory_hostname}}"
-      - name: copying a required file to change the port
-        template:
-          src: /usr/local/latest/conf/server.xml.j2
-          dest: /usr/local/latest/conf/server.xml    
       
 
