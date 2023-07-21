@@ -43,7 +43,7 @@
            var: version_output.stdout_lines[0].split(':')[1].split('/')[1]
       - debug:
            msg: 
-            - "{{version_output.stdout_lines[0].split(':')[1].split('/')[1]}}"
+            - "{{version_output.stdout_lines[0].split(':')[1].split('/')[1] | int}}"
             - "{{inventory_hostname}}"
           
       
