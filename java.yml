@@ -32,7 +32,10 @@
           dest: /usr/local
           remote_src: yes
       - name: renameng tomcat home
+        stat:
+          path: /usr/local/latest
         command: mv /usr/local/apache-tomcat-{{TOMCAT_VAR}} /usr/local/latest
+        when: path is not exists
       - name: starting tomcat server
         shell: /usr/local/latest/bin/startup.sh
       - name: status of the tomcat server
