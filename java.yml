@@ -27,7 +27,7 @@
           url: "{{tomcat_url}}"
           dest: /usr/local
       - name: untar the file
-        unarchieve:
+        unarchive:
           src: /usr/local/apache-tomcat-{{TOMCAT_VAR}}.tar.gz
           dest: /usr/local
           remote_src: yes
