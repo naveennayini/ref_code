@@ -37,7 +37,7 @@
         ignore_errors: true
       - name: copying a required file to change the port
         template:
-          src: /usr/local/7latest/conf/server.xml.j2
+          src: /usr/local/latest/conf/server.xml.j2
           dest: /usr/local/latest/conf/server.xml    
       - name: starting tomcat server
         shell: nohup /usr/local/latest/bin/startup.sh &
