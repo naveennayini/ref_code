@@ -5,7 +5,7 @@
    gather_facts: false
    tasks:
       - name: creating ec2 instance
-          ec2: 
+        ec2: 
           instance: t1.micro
           image: ami-06ca3ca175f37dd66
           count: 1
