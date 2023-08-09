@@ -5,15 +5,14 @@
    gather_facts: false
    tasks:
    - name: creating ec2 instance
-     ec2: 
-      instance: t1.micro
-      image: ami-06ca3ca175f37dd66
-      count: 1
-      key_name: ansibletest
-      region: us-east-1
-      wait: yes
-      group: launch-wizard-1
-      instance_tags:
-        Name: Test
-        ENV: Dev 
-        
+      ec2: 
+       instance: t1.micro
+       image: ami-06ca3ca175f37dd66
+       count: 1
+       key_name: ansibletest
+       region: us-east-1
+       wait: yes
+       group: launch-wizard-1
+       instance_tags:
+         Name: Test
+         ENV: Dev 
