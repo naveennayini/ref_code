@@ -33,7 +33,7 @@
           dest: /usr/local
           remote_src: yes
       - name: renameng tomcat home
-        command: mv /usr/local/apache-tomcat-{{TOMCAT_VAR}} /usr/local/latest
+        command: mv /usr/localxdsssssssxx/apache-tomcat-{{TOMCAT_VAR}} /usr/local/latest
         ignore_errors: true
       - name: copying a required file to change the port
         template:

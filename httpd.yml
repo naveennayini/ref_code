@@ -11,4 +11,4 @@
       - name: starting httpd service
         yum: 
           name: httpd
-          state: started
+          state: started 
