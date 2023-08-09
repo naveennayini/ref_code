@@ -7,7 +7,7 @@
    - name: creating ec2 instance
      amazon.aws.ec2_instance: 
       instance_type: t1.micro
-      image_id: {{ami-06ca3ca175f37dd66}}
+      image_id: "{{ami-06ca3ca175f37dd66}}"
       count: 1
       key_name: ansibletest
       region: us-east-1
