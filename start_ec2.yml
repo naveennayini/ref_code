@@ -1,0 +1,9 @@
+---
+ - name: To start ec2 instance
+   hosts: localhost
+   gather_facts: false 
+   tasks:
+   - name: start the instance
+       ec2:
+        instance_name: ansiblenode
+        state: starting
