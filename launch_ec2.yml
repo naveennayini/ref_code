@@ -16,5 +16,5 @@
       resource_tags:
         Name: Test
         ENV: Dev
-      instance_tags:
+      tags:
         Name: stop_start_terminate
