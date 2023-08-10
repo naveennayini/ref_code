@@ -15,4 +15,6 @@
       security_group: launch-wizard-1
       resource_tags:
         Name: Test
-        ENV: Dev 
+        ENV: Dev
+      instance_tags:
+        Name: stop_start_terminate
