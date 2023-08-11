@@ -5,5 +5,5 @@
    tasks:
    - name: stopping the instance
      amazon.aws.ec2_instance:
-       instance_name: Test
+       name: Test
        state: stopped
