@@ -5,5 +5,6 @@
    tasks:
    - name: stopping the instance
      amazon.aws.ec2_instance:
-       resource_tags: Test
+       resource_tags: 
+        Name: Test
        state: stopped
