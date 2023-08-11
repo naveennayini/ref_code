@@ -4,6 +4,7 @@
    gather_facts: false 
    tasks:
    - name: start the instance
-       ec2:
-        instance_name: ansiblenode
-        state: starting
+     amazon.aws.ec2_instance:
+       resource_tags: 
+         Name: Test
+       state: running
