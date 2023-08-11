@@ -7,4 +7,4 @@
      amazon.aws.ec2_instance:
        resource_tags:
          Name: Test
-       state: terminate
+       state: terminated
