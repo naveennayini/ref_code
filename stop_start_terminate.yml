@@ -16,25 +16,25 @@
       resource_tags: 
         Name: Test
       state: running
-      tags:
-       - start
-       - never
+     tags:
+      - start
+      - never
    - name: stoping ec2 instance
      amazon.aws.ec2_instance:
         resource_tags:
          Name: Test
         state: stopped
-        tags:
-         - stop
-         - never
+     tags:
+      - stop
+      - never
    - name: terminated the instance
      amazon.aws.ec2_instance:
         resource_tags:
          Name: Test
         state: terminated
-        tags:
-         - terminate
-         - never
+     tags:
+      - terminate
+      - never
    
 
 
