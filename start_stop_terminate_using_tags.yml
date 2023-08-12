@@ -1,0 +1,13 @@
+---
+ - name: Starting, stopping & terminating the ec2 instance
+   hosts: localhost
+   gather_facts: false
+   tasks:
+   - name: Info about ec2 instance using ec2_instance_facts
+     amazon.aws.ec2_instance:
+      region: us-east-1
+      filters: 
+        "tag:ENV": Dev
+     register: ec2_info
+     tags:
+       - always
