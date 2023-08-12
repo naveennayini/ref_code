@@ -30,7 +30,7 @@
      amazon.aws.ec2_instance:
       instance_ids: "{{item.instance_id}}" 
       region: us-east-1
-      state: running
+      state: started
       wait: yes
      tags:
       - running
