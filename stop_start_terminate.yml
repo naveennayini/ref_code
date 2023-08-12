@@ -1,13 +1,26 @@
 ---
- - name: This play is used to start ec2 instance
+ - name: This play is used to start&stop, terminate the ec2 instance
    hosts: localhost
    connection: local
    gather_facts: false
    tasks:
    - name: starting ec2 instance
-     ec2:
-      instance_ids:  
-      state: starting
+     amazon.aws.ec2_instance:
+       resource_tags: 
+         Name: Test
+       state: running
+   - name: stoping ec2 instance
+     amazon.aws.ec2_instance:
+       resource_tags:
+         Name: Test
+       state: stopped
+   - name: terminated the instance
+     amazon.aws.ec2_instance:
+       resource_tags:
+         Name: Test
+       state: terminated
+    
+   
 
 
 
