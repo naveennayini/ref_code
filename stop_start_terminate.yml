@@ -10,12 +10,12 @@
         Name: Test
        state: running
    - name: stoping ec2 instance
-       amazon.aws.ec2_instance:
+     amazon.aws.ec2_instance:
         resource_tags:
          Name: Test
         state: stopped
    - name: terminated the instance
-       amazon.aws.ec2_instance:
+     amazon.aws.ec2_instance:
         resource_tags:
          Name: Test
         state: terminated
