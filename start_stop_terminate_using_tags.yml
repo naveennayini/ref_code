@@ -40,7 +40,7 @@
      amazon.aws.ec2_instance:
       instance_ids: "{{item.instance_id}}"
       region: us-east-1
-      state: terminate
+      state: terminated
       wait: yes
      tags:
       - terminated
