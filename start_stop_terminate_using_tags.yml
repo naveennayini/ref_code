@@ -35,7 +35,7 @@
      tags:
       - running
       - never
-     with_items: "{{ec2_info.instance}}"
+     with_items: "{{ec2_info.instances}}"
    - name: terminating the instance using the instance tags
      amazon.aws.ec2_instance:
       instance_ids: "{{item.instance_id}}"
