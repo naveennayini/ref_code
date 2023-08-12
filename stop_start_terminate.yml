@@ -7,17 +7,17 @@
    - name: starting ec2 instance
      amazon.aws.ec2_instance:
        resource_tags: 
-          Name: Test
+        name: Test
        state: running
    - name: stoping ec2 instance
        amazon.aws.ec2_instance:
         resource_tags:
-          Name: Test
+         name: Test
         state: stopped
    - name: terminated the instance
        amazon.aws.ec2_instance:
         resource_tags:
-          Name: Test
+         name: Test
         state: terminated
     
    
