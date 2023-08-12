@@ -8,7 +8,7 @@
       region: us-east-1
       filters: 
         "tag:ENV": Dev
-     register: ec2_info
+      register: ec2_info
    - name: displaying the outputs of ec2_info
      debug: msg="{{item.instance_id}}"
      with_items: "{{ec2_info.instances}}"
