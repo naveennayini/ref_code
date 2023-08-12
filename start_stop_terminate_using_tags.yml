@@ -43,4 +43,4 @@
       tags:
        - terminated
        - never
-      with_items: "{{ec2_info.instance}}
+      with_items: "{{ec2_info.instance}}"
