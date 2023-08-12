@@ -5,20 +5,20 @@
    gather_facts: false
    tasks:
    - name: starting ec2 instance
-     amazon.aws.ec2_instance:
-       resource_tags: 
-         Name: Test
-       state: running
+      amazon.aws.ec2_instance:
+        resource_tags: 
+          Name: Test
+        state: running
    - name: stoping ec2 instance
-     amazon.aws.ec2_instance:
-       resource_tags:
-         Name: Test
-       state: stopped
+      amazon.aws.ec2_instance:
+        resource_tags:
+          Name: Test
+        state: stopped
    - name: terminated the instance
-     amazon.aws.ec2_instance:
-       resource_tags:
-         Name: Test
-       state: terminated
+      amazon.aws.ec2_instance:
+        resource_tags:
+          Name: Test
+        state: terminated
     
    
 
