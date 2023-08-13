@@ -3,8 +3,8 @@
    hosts: localhost
    gather_facts: false
    tasks:
-   - name: terminating the ec2 instance
-     amazon.aws.ec2_instance_facts:
+   - name: getting the ec2_info
+     amazon.aws.ec2_instance_info:
       region: us-east-1
      register: ec2_info
    - name: displaying the output 
