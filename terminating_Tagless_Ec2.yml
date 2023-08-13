@@ -12,7 +12,8 @@
      with_items: "{{ec2_info.instances}}"
      when: item.tags.keys() | length==0
    - name: terminating the ec2_instance which are not having tags
-     amazon.aws.ec2_instance_info:
+     amazon.aws.ec2_instance:
+      instance_ids: "{{ec2_info.instance_ids}}"
       region: us-east-1
       state: terminated
       wait: yes
