@@ -10,4 +10,4 @@
    - name: displaying the output 
      debug: var=item.tags
      with_items: "{{ec2_info.instances}}"
-     when: item.tags.key() | lenght == 0
+     when: item.tags.keys() | lenght == 0
