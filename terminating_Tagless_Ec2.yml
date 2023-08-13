@@ -1,0 +1,13 @@
+---
+ - name: Terminating the ec2 instances if tags are not there
+   hosts: localhost
+   gather_facts: false
+   tasks:
+   - name: terminating the ec2 instance's
+     amazon.aww.ec2_instance_facts:
+      region: us-east-1
+     register: ec2_info
+   - name: displaying the output 
+     debug: var=item.tags
+     with_items: "{{ec2_info.instances}}"
+     when: item.tags.key() | lenght == 0
