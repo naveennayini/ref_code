@@ -7,7 +7,7 @@
      amazon.aws.ec2_instances_info:
       region: us-east-1
       filters:
-       "tag:DEV": Test
+       "tag:Dev": Test
      register: output
    - name: Displaying the info of ec2 instance
      debug:  var=output
