@@ -8,8 +8,8 @@
       region: us-east-1
       filters:
        "tag:ENV": Test
-     register: showvalues
+     register: out
    - name: Displaying the info of ec2 instance
-     debug:  var=showvalues
+     debug:  msg: out
 
      
