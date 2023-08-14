@@ -10,7 +10,7 @@
        "tag:ENV": Test
      register: out
    - name: Using template module & src as jinja2 file
-     template:
+     ansible.builtin.template:
        src: jinj2_file.j2
        dest: instances_info.csv
 
