@@ -10,6 +10,6 @@
        "tag:DEV": Test
      register: output
    - name: Displaying the info of ec2 instance
-     debug: var=output
+     debug:  var=output
 
      
