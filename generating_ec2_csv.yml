@@ -1,0 +1,15 @@
+---
+ - name: Generating ec2 instances into csv file
+   hosts: localhost
+   gather_facts: false
+   tasks:
+   - name: report of csv
+     amazon.aws.ec2_instance_info:
+      region: us-east-1
+      filters:
+       "tag:DEV": Test
+     register: output
+   - name: Displaying the info of ec2 instance
+     debug: var=out
+
+     
