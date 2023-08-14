@@ -11,7 +11,7 @@
      register: out
    - name: Using template module & src as jinja2 file
      template:
-       src: /home/ec2-user/ansible_test/jinj2_file.j2
+       src: jinj2_file.j2
        dest: /home/ec2-user/ansible_test/instances_list.csv
 
      
