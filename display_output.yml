@@ -1,5 +1,3 @@
-ansible-vault encrypt display_output.yml
-
 ---
  - name: Generating ec2 instances into csv file
    hosts: localhost
@@ -19,3 +17,5 @@ ansible-vault encrypt display_output.yml
 
 #ansible-vault encrypt display_output.yml
 #ansible-vault decrypt display_output.yml
+#To change the password of ansible-vault , the following commands to use
+  #ansible-vault rekey display_output.yml
