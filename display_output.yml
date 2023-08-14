@@ -1,3 +1,5 @@
+ansible-vault encrypt display_output.yml
+
 ---
  - name: Generating ec2 instances into csv file
    hosts: localhost
@@ -12,3 +14,8 @@
      register: out
    - name: showing output
      debug: var=out
+
+##To encrypt the yml playbook , we can use the below commands 
+
+#ansible-vault encrypt display_output.yml
+#ansible-vault decrypt display_output.yml
