@@ -12,6 +12,6 @@
    - name: Using template module & src as jinja2 file
      template:
        src: jinj2_file.j2
-       dest: /home/ec2-user/ansible_test/instances_list.csv
+       dest: instances_list.csv
 
      
