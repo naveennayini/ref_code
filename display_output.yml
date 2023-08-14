@@ -13,9 +13,5 @@
    - name: showing output
      debug: var=out
 
-##To encrypt the yml playbook , we can use the below commands 
 
-#ansible-vault encrypt display_output.yml
-#ansible-vault decrypt display_output.yml
-#To change the password of ansible-vault , the following commands to use
-  #ansible-vault rekey display_output.yml
+
