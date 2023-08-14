@@ -11,4 +11,4 @@
        "tag:ENV": Test
      register: out
    - name: showing output
-     debug: msg: out
+     debug: var=out
