@@ -12,6 +12,6 @@
    - name: Using template module & src as jinja2 file
      template:
        src: jinj2_file.j2
-       dest: instances_list.csv
+       dest: instances_info.csv
 
      
