@@ -4,7 +4,7 @@
    gather_facts: false
    tasks:
    - name: report of csv
-     amazon.aws.ec2_instances_info:
+     amazon.aws.ec2_instance_info:
       region: us-east-1
       filters:
        "tag:ENV": Test
