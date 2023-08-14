@@ -10,6 +10,6 @@
        "tag:ENV": Test
      register: out
    - name: Displaying the info of ec2 instance
-     debug:  msg: out
+     debug:  msg= out
 
      
