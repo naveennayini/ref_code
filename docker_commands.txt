@@ -23,4 +23,6 @@ docker installation on amazon linux machine
 --> docker run redis:4.0(TAG)
 --> If no tag that will considered as latest
     docker run redis
---> 
+--> docker run -d timer
+--> docker attach timer
+
