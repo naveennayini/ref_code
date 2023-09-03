@@ -6,5 +6,5 @@ ADD https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.80/bin/apache-tomcat-9.0.80.ta
 RUN cd /tmp && tar -xvzf apache-tomcat-9.0.80.tar.gz
 RUN cd /tmp && mv apache-tomcat-9.0.80.tar.gz /opt/
 EXPOSE 8080
-ADD https://get.jenkins.io/war-stable/2.414.1/jenkins.war /opt/apache-tomcat-9.0.80/webapps/
-CMD ["/opt/apache-tomcat-9.0.80/bin/catalina.sh","run"]
+ADD https://get.jenkins.io/war-stable/latest/jenkins.war /opt/apache-tomcat-9.0.80/webapps/
+CMD ["/opt/apache-tomcat-9.0.80/bin/catalina.sh"]
