@@ -1,6 +1,7 @@
 FROM ubuntu
 RUN apt-get update
-RUN apt-get install -y python3 python-pip
+RUN apt-get install -y python2
+RUN apt-get install -y pip
 RUN pip install flask
 COPY /home/ec2-user/ansible-test/app.py /opt/app.py
 ENTRYPOINT [ "FLASK_APP=/opt/app.py flask run --host=0.0.0.0" ]
